@@ -1,0 +1,14 @@
+[+] Lab: SQL injection UNION attack, finding a column containing text
+
+[+] The goal is to perform a SQL injection UNION attack that returns an additional row containing the value provided.
+
+[+] 1. Access the lab, open burp suite, and turn foxy proxy on
+
+[+] 2. Check that the query is returning three columns, using the following payload in the category parameter: 
+'+UNION+SELECT+NULL,NULL,NULL--
+
+[+] 3.  Try replacing each null with the random value provided by the lab, for example: 
+'+UNION+SELECT+'abcdef',NULL,NULL--
+
+
+

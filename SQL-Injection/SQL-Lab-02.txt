@@ -1,0 +1,14 @@
+[+] Lab: SQL injection vulnerability allowing login bypass
+
+[+] 1. Access the lab and Open burp suite
+
+[+] 2. Turn the foxy proxy on and turn the burp intercept on
+
+[+] 3. Click my account and send an invalid form
+
+[+] 4. Modify the username parameter with the value: administrator'--
+
+[+] 5. Forward the request, turn the intercept off and the lab is solved
+
+
+

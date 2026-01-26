@@ -1,0 +1,11 @@
+[+] Lab: SQL injection UNION attack, determining the number of columns returned by the query
+
+[+] The goal is to determine the number of columns returned by the query by performing a SQL injection UNION attack that returns an additional row containing null values. 
+
+[+] 1. Access the lab, open burp suite, and turn foxy proxy on
+
+[+] 2. check the category parameter, with the value '+UNION+SELECT+NULL--. Observe that an error occurs. 
+
+[+] 3. keep adding Null values until the error disappears and the response includes additional content containing the null values. 
+
+
