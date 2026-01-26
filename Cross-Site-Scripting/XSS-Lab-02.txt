@@ -1,0 +1,14 @@
+[+] Lab: Stored XSS into HTML context with nothing encoded
+
+[+] Our simple goal is to submit a comment that calls the alert function when the blog post is viewed
+
+[+] 1. Enter the following into the comment box:
+      <script>alert(1)</script>
+      
+[+] 2. Enter a name, email and website.
+
+[+] 3. Click "Post comment".
+
+[+] 4. Go back to the blog.
+
+

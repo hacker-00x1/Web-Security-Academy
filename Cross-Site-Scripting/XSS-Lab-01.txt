@@ -1,0 +1,7 @@
+[+] Lab: Reflected XSS into HTML context with nothing encoded
+
+[+] Our simple goal is to perform a cross-site scripting attack that calls the alert function
+
+[+] Using the payload: <script>alert(1)</script>
+
+
