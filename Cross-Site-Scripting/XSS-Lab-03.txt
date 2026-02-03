@@ -1,0 +1,9 @@
+[+] Lab: DOM XSS in document.write sink using source location.search
+
+[+] The goal is to perform a cross-site scripting attack that calls the alert function.
+
+[+] 1. Testing the search box and checking whether it accept our script
+
+[+] 2.  Break out of the img attribute by searching for:  
+"><svg onload=alert(1)>
+
